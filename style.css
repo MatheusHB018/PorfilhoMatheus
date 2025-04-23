@@ -1,111 +1,496 @@
-/* Definição geral */
+/* Reset Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Corpo */
 body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
-    color: #e0e0e0;
-    margin: 0;
-    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    overflow-x: hidden;
     line-height: 1.6;
-  }
-  
-  /* Cabeçalho */
-  header {
-    background: #00d8ff;
-    color: #121212;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  header h1 {
-    font-size: 2.5em;
+}
+
+/* Cabeçalho */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.header:hover {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    font-size: 28px;
+    color: #0078d7;
     font-weight: bold;
-    margin: 0;
-  }
-  
-  header p {
-    font-size: 1.2em;
-  }
-  
-  /* Seções */
-  section {
-    margin: 20px auto;
-    padding: 20px;
-    background: #222;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-    max-width: 800px;
-  }
-  
-  h2 {
-    color: #f39c12;
-    border-bottom: 2px solid #f39c12;
-    padding-bottom: 5px;
-    font-size: 1.8em;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  ul li {
-    margin: 10px 0;
-    font-size: 1.1em;
-  }
-  
-  a {
-    color: #00d8ff;
     text-decoration: none;
-    font-weight: bold;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-    color: #f39c12;
-  }
-  
-  /* Rodapé */
-  footer {
-    background: #1f1f1f;
-    color: #7f8c8d;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-  }
-  
-  /* Botão ou hover dinâmico */
-  button {
-    background: #00d8ff;
-    color: #121212;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 6px;
     cursor: pointer;
-    transition: 0.3s ease;
-    font-size: 1.1em;
-  }
-  
-  button:hover {
-    background: #f39c12;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    font-size: 16px;
+    color: #555;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #0078d7;
+    font-size: 18px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Página Inicial */
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 10%;
+    text-align: center;
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+}
+
+.home-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #0078d7;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.home-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.home-content .btn {
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #0078d7, #00bcd4);
     color: #fff;
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-content .btn:hover {
+    background: #fff;
+    color: #0078d7;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    border: 2px solid #0078d7;
+}
+
+/* Seções */
+section {
+    padding: 70px 10%;
+    text-align: center;
+    background: #ffffff;
+    border-top: 1px solid #e0e0e0;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0078d7;
+    border-bottom: 2px solid #0078d7;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+section p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #555;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px 10%;
+    background: #f5f5f5;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 5%;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .home-content h1 {
+        font-size: 2.5em;
+    }
+
+    .home-content p {
+        font-size: 1em;
+    }
+
+    .home-content .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+}
+
+/* Animações */
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animação de fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Botão de voltar ao topo */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#back-to-top:hover {
+    background: #005bb5;
+    transform: scale(1.1);
+}
+
+/* Cabeçalho ao rolar */
+header.scrolled {
+    background: #0078d7;
+    color: #fff;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+/* Menu de Navegação */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #0078d7;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #005bb5;
+}
+
+/* Foto de Perfil */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Menu de Navegação */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #0078d7;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #005bb5;
+}
+
+/* Adiciona espaçamento para evitar sobreposição do menu */
+header, section, footer {
+    margin-top: 60px;
+}
+/* Menu de Navegação */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #0078d7;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #005bb5;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-top: 80px; /* Espaço para o menu fixo */
+    padding: 20px;
+    background: #f5f5f5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* Seções */
+section {
+    padding: 40px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #0078d7;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0078d7;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+section p, section ul {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* Botão de Download */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #0078d7, #00bcd4);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background: #005bb5;
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px 10%;
+    background: #f5f5f5;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Animação de Fade-In */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
     header h1 {
-      font-size: 2em;
+        font-size: 2em;
     }
-  
-    header p, section {
-      font-size: 1em;
+
+    section h2 {
+        font-size: 1.8em;
     }
-  
-    section {
-      padding: 15px;
+
+    section p, section ul {
+        font-size: 1em;
     }
-  
-    h2 {
-      font-size: 1.5em;
+
+    .btn {
+        font-size: 0.9em;
+        padding: 10px 20px;
     }
-  }
+}

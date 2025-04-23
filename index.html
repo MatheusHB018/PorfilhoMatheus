@@ -5,29 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Mathues Bispo</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <h1>Mathues Bispo</h1>
-    <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+  <!-- Menu de Navegação -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#top">Início</a></li>
+      <li><a href="#sobre">Sobre Mim</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#tecnologias">Tecnologias</a></li>
+    </ul>
+  </nav>
+
+  <!-- Cabeçalho com Foto -->
+  <header class="fade-in" id="top">
+    <div class="profile">
+      <img src="foto.jpeg" alt="Foto de Mathues Bispo" class="profile-photo">
+      <div>
+        <h1>Mathues Bispo</h1>
+        <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+      </div>
+    </div>
   </header>
 
-  <section>
+  <section class="fade-in" id="sobre">
     <h2>Sobre Mim</h2>
     <p>🎓 Estudante da FATEC de Presidente Prudente-SP.</p>
     <p>🚀 Explorando frontend, backend e muito mais para evoluir como desenvolvedor.</p>
     <p>📚 Adoro aprender, criar ideias e trabalhar em grupos.</p>
   </section>
 
-  <section>
+  <section class="fade-in" id="projetos">
     <h2>Projetos em Andamento</h2>
     <ul>
       <li>🔗 <a href="https://github.com/buja23/BG-BJ-tec.git">BG-BJ TECH</a>: Sistema de gestão para bares e restaurantes.</li>
     </ul>
   </section>
 
-  <section>
+  <section class="fade-in" id="tecnologias">
     <h2>Tecnologias que Eu Uso</h2>
     <h3>Linguagens & Banco de Dados</h3>
     <ul>
@@ -56,20 +73,13 @@
     </ul>
   </section>
 
-  <section>
-    <h2>Estatísticas do GitHub</h2>
-    <ul>
-      <li>⭐ Total de estrelas ganhas: 0</li>
-      <li>📑 Total de commits (2025): 4</li>
-      <li>🛠️ Total de PRs enviados: 0</li>
-      <li>🐞 Total de issues abertas: 0</li>
-      <li>🌟 Contribuiu em (último ano): 1</li>
-    </ul>
-  </section>
-
-  <footer>
+  <footer class="fade-in">
     <p>© 2025 Mathues Bispo. Feito com 💻 e 🚀.</p>
   </footer>
 
+  <!-- Botão de voltar ao topo -->
+  <button id="back-to-top" title="Voltar ao topo">⬆️</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
