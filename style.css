@@ -1,45 +1,111 @@
+/* Definição geral */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
     color: #e0e0e0;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
   }
+  
+  /* Cabeçalho */
   header {
-    background-color: #1f1f1f;
-    padding: 20px;
+    background: #00d8ff;
+    color: #121212;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
+  
   header h1 {
-    color: #00d8ff;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
   }
+  
+  header p {
+    font-size: 1.2em;
+  }
+  
+  /* Seções */
   section {
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
-    background-color: #222;
-    border-radius: 8px;
+    background: #222;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    max-width: 800px;
   }
+  
   h2 {
     color: #f39c12;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 5px;
+    font-size: 1.8em;
   }
-  a {
-    color: #00d8ff;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
+  
   ul {
     list-style-type: none;
     padding: 0;
   }
+  
   ul li {
     margin: 10px 0;
+    font-size: 1.1em;
   }
+  
+  a {
+    color: #00d8ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #f39c12;
+  }
+  
+  /* Rodapé */
   footer {
-    background-color: #1f1f1f;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    background: #1f1f1f;
     color: #7f8c8d;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Botão ou hover dinâmico */
+  button {
+    background: #00d8ff;
+    color: #121212;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 1.1em;
+  }
+  
+  button:hover {
+    background: #f39c12;
+    color: #fff;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2em;
+    }
+  
+    header p, section {
+      font-size: 1em;
+    }
+  
+    section {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
   }
