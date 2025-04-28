@@ -1,85 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Mathues Bispo</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=63650&format=png&color=000000" type="image/x-icon">
 </head>
 <body>
+    <header class="header">
+        <a href="#home" class="logo">Portfólio</a>
 
-  <!-- Menu de Navegação -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#top">Início</a></li>
-      <li><a href="#sobre">Sobre Mim</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#tecnologias">Tecnologias</a></li>
-    </ul>
-  </nav>
+        <nav class="navbar">
+            <a href="#" style="--i:1;" class="active">INICIO</a>
+            <a href="habilidades.html" style="--i:2;">HABILIDADES</a>
+            <!-- DESACTIVE <a href="#" style="--i:3;">CONTATO</a> -->
+        </nav>
+    </header>
 
-  <!-- Cabeçalho com Foto -->
-  <header class="fade-in" id="top">
-    <div class="profile">
-      <img src="foto.jpeg" alt="Foto de Mathues Bispo" class="profile-photo">
-      <div>
-        <h1>Mathues Bispo</h1>
-        <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
-      </div>
-    </div>
-  </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Ola, eu sou</h3>
+            <h1>Mahteus Henrique da Conceição Bispo</h1>
+            <h3>Eu sou <span class="multiple-text"></span></h3>
+            <div class="social-media">
+                <a href="https://www.instagram.com/iae.bispo" target="_blank" style="--i:1;"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/matheus-henrique-conceição-bispo-b4948826a" target="_blank" style="--i:2;"><i class='bx bxl-linkedin-square'></i></i></a>
+                <a href="https://github.com/MatheusHB018" target="_blank" style="--i:3;"><i class='bx bxl-github'></i></a>
+            </div>
+            <a href="file:///C:/Users/mathe/OneDrive/%C3%81rea%20de%20Trabalho/PorfilhoMatheus/Matheus.pdf" download="" class="btn">Download CV</a>
+        </div>
 
-  <section class="fade-in" id="sobre">
-    <h2>Sobre Mim</h2>
-    <p>🎓 Estudante da FATEC de Presidente Prudente-SP.</p>
-    <p>🚀 Explorando frontend, backend e muito mais para evoluir como desenvolvedor.</p>
-    <p>📚 Adoro aprender, criar ideias e trabalhar em grupos.</p>
-  </section>
+        <div class="home-img">
+            <img src="foto.jpeg" alt="">
+        </div>
+    </section>
 
-  <section class="fade-in" id="projetos">
-    <h2>Projetos em Andamento</h2>
-    <ul>
-      <li>🔗 <a href="https://github.com/buja23/BG-BJ-tec.git">BG-BJ TECH</a>: Sistema de gestão para bares e restaurantes.</li>
-    </ul>
-  </section>
+    <section class="about">
+        <div class="about-img">
+            <img src="foto.jpeg">
+        </div>
+        <div class="about-content">
+            <h2>Sobre mim</h2>
+            <ul>
+                <li style="--i:1;">Nome: <span>Matheus Henriue da Conceição Bispo</span></li>
+                <li style="--i:2;">Idade: <span>20</span></li>
+                <li style="--i:3;">Moro em: <span>Presidente Prudente,SP</span></li>
+                <li style="--i:4;">Curso: <span>Analise e Desenvolvimento de Sistemas</span></li>
+            </ul>
+            <p style="--i:5;">Meu grande sonho é poder dar a minha familia um bom futuro.</p>
+            <br>
+            <p style="--i:6;"><span class="hobbies"></span></p>
+        </div>
+    </section>
 
-  <section class="fade-in" id="tecnologias">
-    <h2>Tecnologias que Eu Uso</h2>
-    <h3>Linguagens & Banco de Dados</h3>
-    <ul>
-      <li>🖋️ <a href="https://www.w3.org/TR/2014/REC-html5-20141028/">HTML5</a>, <a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS3</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
-      <li>🗄️ <a href="https://www.mysql.com/">MySQL</a>, <a href="https://www.mongodb.com/">MongoDB</a>, <a href="https://www.php.net/">PHP</a></li>
-    </ul>
-
-    <h3>Estudando Agora</h3>
-    <ul>
-      <li>🐍 <a href="https://www.python.org/">Python</a></li>
-      <li>🏗️ <a href="https://www.typescriptlang.org/">TypeScript</a></li>
-    </ul>
-
-    <h3>Já Tive Contato</h3>
-    <ul>
-      <li>💻 <a href="https://cplusplus.com/">C++</a>, <a href="https://dotnet.microsoft.com/en-us/languages/csharp">C#</a>, <a href="https://www.java.com/en/">Java</a></li>
-    </ul>
-
-    <h3>Frameworks e Ferramentas</h3>
-    <ul>
-      <li>⚛️ <a href="https://pt-br.reactjs.org/">React</a></li>
-      <li>🟢 <a href="https://nodejs.org/">Node.js</a></li>
-      <li>🦅 <a href="https://laravel.com/">Laravel</a></li>
-      <li>🖼️ <a href="https://vuejs.org/">Vue.js</a></li>
-      <li>🎥 <a href="https://ffmpeg.org/">FFmpeg</a></li>
-    </ul>
-  </section>
-
-  <footer class="fade-in">
-    <p>© 2025 Mathues Bispo. Feito com 💻 e 🚀.</p>
-  </footer>
-
-  <!-- Botão de voltar ao topo -->
-  <button id="back-to-top" title="Voltar ao topo">⬆️</button>
-
-  <script src="script.js"></script>
+    <section class="contato">
+        <div class="contato-content">
+            <h3>CONTATO</h3>
+            <ul>
+                <li style="--i:1;">
+                    Email: <a href="mailto:matheusbispo925@gmail.com?subject=Portifolio&body=Olá Matheus Bispo, vim por meio de seu portifólio" target="_blank">matheusbispo925@gmail.com</a>
+                </li>
+                <li style="--i:2;">
+                    Linkedin: <a href="https://www.linkedin.com/in/matheus-henrique-conceição-bispo-b4948826a" target="_blank">Linkedin - Matheus Bispo</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <!--@AUTHOR: Matheus Bispo-->
+    <!--@2025-->
 </body>
 </html>
